@@ -1,0 +1,13 @@
+<h1>What did you find?</h1>
+<div class="container">
+	<div class="row found-options">
+		<div class="col-md-4 text-center found-option">
+			<a href="#" class="btn btn-primary correct">{{name}}</a>
+		</div>
+		{{#distractors}}
+		<div class="col-md-4 text-center found-option">
+			<a href="#" class="btn btn-primary">{{name}}</a>
+		</div>
+		{{/distractors}}
+	</div>
+</div>

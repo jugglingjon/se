@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+	
+	<div class="screen screen-splash" style="display:block;">
+		<h1>Name of App</h1>
+		<h3><a href="#" class="nav-link" data-to="screen-mission">Tap to continue</a></h3>
+	</div>
+
+	<div class="screen screen-mission">
+		<h1>Go to the site</h1>
+		<p>Excepteur dolore labore sint laborum ad eiusmod reprehenderit sint nisi laboris dolore dolore quis anim id dolore est et exercitation ut aliquip veniam consequat deserunt pariatur consectetur sunt ex officia.</p>
+		<p><a href="#" class="btn btn-primary btn-toSearch">I'm there</a></p>
+	</div>
+
+	<div class="screen screen-search">
+		<h1>Walk Around</h1>
+		<p>Excepteur dolore labore sint laborum ad eiusmod reprehenderit sint nisi laboris dolore dolore quis anim id dolore est et exercitation ut aliquip veniam consequat deserunt pariatur consectetur sunt ex officia.</p>
+		<a href="#" class="btn-find btn btn-primary btn-trigger" data-id="100">Trigger iBeacon Popup 100</a>
+		<a href="#" class="btn-find btn btn-primary btn-trigger" data-id="200">Trigger iBeacon Popup 200</a>
+		<a href="#" class="btn-find btn btn-primary btn-trigger" data-id="300">Trigger iBeacon Popup 300</a>
+	</div>
+
+	<div class="screen screen-found">
+		
+	</div>
+
+	<div class="dynamic-modal"></div>
+
+	<!-- REQUIRED FOR BEACONS -->
+	<script src="cordova.js"></script> <!-- Cordova not inculded in project -->
+	<script src="js/libs/evothings/evothings.js"></script>
+	<script src="js/libs/evothings/ui/ui.js"></script>
+	<script src="js/beaconFinder.js"></script>
+	<script src="js/beaconlist.js"></script>
+	<!-- END REQUIRED FOR BEACONS -->
+
+	<script src="js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/vendor/mustache.min.js"></script>
+
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
