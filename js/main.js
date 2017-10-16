@@ -299,9 +299,8 @@ $(document).ready(function(){
 	});
 
 	$('.btn-toSearch').click(function(){
-		changeScreen('screen-search',{after:function(){
-			beaconFinder.initialize;
-		}})
+		beaconFinder.initialize;
+		changeScreen('screen-search');
 	});
 
 });
