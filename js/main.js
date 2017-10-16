@@ -60,7 +60,7 @@ var $OLDobjects={
 	}
 }
 
-var $objects = [
+var beaconlist = [
 {
 	"major":100,
 	"minors":[1,2],
